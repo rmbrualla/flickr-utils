@@ -225,7 +225,7 @@ class FlickrAPI:
 		if not self.__handlerCache.has_key(method):
 			def handler(_self = self, _method = method, **arg):
 				_method = "flickr." + _method.replace("_", ".")
-				url = "http://" + FlickrAPI.flickrHost + \
+				url = "https://" + FlickrAPI.flickrHost + \
 					FlickrAPI.flickrRESTForm
 				arg["method"] = _method
 				postData = urllib.urlencode(arg) + "&api_sig=" + \
