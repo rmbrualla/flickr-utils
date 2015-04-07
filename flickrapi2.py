@@ -114,7 +114,7 @@ class XMLNode:
 		storeXML -- if True, stores the XML string in the root XMLNode.xml
 
 		"""
-
+		
 		def __parseXMLElement(element, thisNode):
 			"""Recursive call to process this XMLNode."""
 			thisNode.elementName = element.nodeName
